@@ -6,7 +6,6 @@ import java.util.Random;
 
 public class Deck {
     ArrayList<Card> deck = new ArrayList<>();
-    static Random gen = new Random();
 
     void createDeck(){
         for (int i = 2; i<=10; i++){
@@ -42,7 +41,7 @@ public class Deck {
     }
 
     Card drawCard(){
-        return deck.remove(gen.nextInt(deck.size()));
+        return deck.removeFirst();
     }
 
     public static void main(String[] args) {

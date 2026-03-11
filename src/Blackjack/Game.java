@@ -157,6 +157,7 @@ public class Game {
                 deck.deck.addAll(dealer.hand);
                 player.hand.clear();
                 dealer.hand.clear();
+                deck.shuffleDeck();
                 gameFlow();
             }
             case "2" -> System.exit(0);
@@ -165,10 +166,8 @@ public class Game {
 
     String choice(){
         String choice = scan.nextLine();
-        while (true){
-            if (choice.equals("1") || choice.equals("2")){
-                break;
-            }
+        while (!choice.equals("1") && !choice.equals("2")){
+            choice = scan.nextLine();
         }
         return choice;
     }
