@@ -34,6 +34,7 @@ public class Game {
 
         System.out.println("Wins: " + wins);
         System.out.println("Losses " + losses);
+        System.out.println("Ties " + ties);
 
         System.out.println("Dealer's hand:");
         System.out.println(dealer.hand.getFirst() + "\n");
