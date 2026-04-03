@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Clicker</title>
+  <meta charset="UTF-8">
+  <title>Clicker</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <script src="logic.js" defer></script>
+  <script src="script.js" defer></script>
 
 </head>
 <body>
 
-<div class="clicking-box">
-  <p id="counter">0</p>
-  <button id="btn">Click me</button>
+<h2>Holy Shit It's Another Clicking Game</h2>
+
+<div class="box">
+  <section   class="scoreboard">
+    <p>Highscore: <span id="highscore">0</span></p>
+    <p>Lowscore: <span id="lowscore">0</span></p>
+  </section>
+
+  <section class="clicking-box">
+    <p id="counter">0</p>
+    <div class="button-bar">
+      <button id="btn-increment">Click me!</button>
+      <button id="btn-decrement">Dont click me!</button>
+      <div>
+        <button id="btn-reset">Reset me!</button>
+      </div>
+    </div>
+  </section>
 </div>
+
+<section class="achievements">
+  <p id="achievements-list">Achievements:</p>
+</section>
+
 
 </body>
 </html>

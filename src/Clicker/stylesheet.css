@@ -1,19 +1,61 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: rgb(237, 237, 237);
+}
+
+.box {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
 }
 
 .clicking-box {
-    border-radius: 5px;
-    border: 2px solid black;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     text-align: center;
 }
 
-.clicking-box button:hover {
+.button-bar button {
+    padding: 10px;
+    margin: 10px;
+}
+
+.button-bar button:hover {
     cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.scoreboard {
+    margin-left: 10px;
+}
+
+.scoreboard p {
+    text-decoration: underline;
+    margin: 7px;
+}
+
+#counter {
+    display: inline-block;
+    padding: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.achievements {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+}
+
+.achievements p {
+    margin: 4px;
 }
